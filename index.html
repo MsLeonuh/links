@@ -93,13 +93,12 @@
 
   /* ── HERO ── */
   .hero {
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    padding: 60px 28px 52px;
-    display: flex; align-items: center; justify-content: center;
-    gap: 56px; flex-wrap: wrap;
-    position: relative;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
   /* PAW PRINTS */
 .paw-prints { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
 .paw { position: absolute; width: 55px; height: 55px; }
@@ -604,18 +603,20 @@
     </svg>
   </div>
   <div class="hero-img-wrap">
-    <img src="https://msleonuh.github.io/links/msleonuh.jpeg" alt="MsLeonuh">
-     </div>
-    <p class="tagline">"Your guide to glowing up."</p>
-    <p class="sub">Curated beauty &amp; style picks — honest reviews, real products. Affiliate links help keep the content coming.</p>
-    <div class="hero-pills">
-      <span class="hero-pill">Skincare</span>
-      <span class="hero-pill">Makeup</span>
-      <span class="hero-pill">Hair Care</span>
-      <span class="hero-pill">Nails</span>
-      <span class="hero-pill">Fashion</span>
-    </div>
+  <img src="https://msleonuh.github.io/links/msleonuh.jpeg" alt="MsLeonuh">
+</div>
+<div class="hero-text">
+  <h1>MsLeonuh</h1>
+  <p class="tagline">"Your guide to glowing up."</p>
+  <p class="sub">Curated beauty &amp; style picks — honest reviews, real products. Affiliate links help keep the content coming.</p>
+  <div class="hero-pills">
+    <span class="hero-pill">Skincare</span>
+    <span class="hero-pill">Makeup</span>
+    <span class="hero-pill">Hair Care</span>
+    <span class="hero-pill">Nails</span>
+    <span class="hero-pill">Fashion</span>
   </div>
+</div>
 </section>
 
 <!-- PAGE LAYOUT -->
