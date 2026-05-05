@@ -136,20 +136,20 @@
     line-height: 1.8; margin-bottom: 24px;
     font-weight: 400;
   }
-  .hero-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hero-pills { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
   .hero-pill {
     background: transparent;
     border: 1px solid var(--border);
     color: var(--text-muted);
     font-family: 'Inter', sans-serif;
-    font-size: 10px; font-weight: 600;
+    font-size: 11px; font-weight: 600;
     letter-spacing: 0.12em; text-transform: uppercase;
-    padding: 6px 14px; border-radius: 2px;
+    padding: 6px 12px; border-radius: 2px;
     transition: border-color 0.2s, color 0.2s;
   }
   .hero-pill:hover { border-color: var(--rose); color: var(--rose); }
 
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     .hero { flex-direction: column; text-align: center; padding: 40px 20px 36px; gap: 28px; }
     .hero-img-wrap { width: 150px; height: 150px; }
     .hero-text { text-align: center; }
