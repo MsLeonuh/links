@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Is You — Glow From the Inside Out</title>
+<link rel="icon" type="image/png" href="https://msleonuh.github.io/links/Untitled_design.png">
+<meta name="description" content="Art Is You by MsLeonuh — manifest wealth, glow from within. Journal prompts, financial affirmations eBook, PDF planner and curated beauty picks.">
+<meta name="p:domain_verify" content="38d196c52af3e59b84d9dc07f088575e"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blush:       #f2dedd;
+    --blush-light: #faf3f3;
+    --blush-mid:   #e8c8c6;
+    --rose:        #c9908e;
+    --rose-deep:   #a06b69;
+    --champagne:   #f7f0e8;
+    --gold:        #c4a882;
+    --gold-light:  #e8d8c4;
+    --cream:       #fdfaf7;
+    --white:       #ffffff;
+    --text:        #1e1818;
+    --text-mid:    #5a4a4a;
+    --text-light:  #9a8a8a;
+    --border:      #ecdede;
+    --shadow:      rgba(30,24,24,0.07);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--text); font-size: 14px; line-height: 1.6; }
+
+  /* ANNOUNCE */
+  .announce-bar {
+    background: var(--text); color: rgba(255,255,255,0.85);
+    text-align: center; padding: 10px 20px;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;
+  }
+  .announce-bar a { color: var(--gold-light); text-decoration: none; font-weight: 600; margin-left: 10px; border-bottom: 1px solid var(--gold-light); padding-bottom: 1px; }
+
+  /* HEADER */
+  header { background: var(--cream); border-bottom: 1px solid var(--border); padding: 0 48px; position: sticky; top: 0; z-index: 200; }
+  .header-inner { max-width: 1240px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .logo-block { display: flex; flex-direction: column; text-decoration: none; }
+  .logo-main { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: var(--text); letter-spacing: 0.06em; line-height: 1; font-style: italic; }
+  .logo-sub { font-family: 'Jost', sans-serif; font-size: 8px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); margin-top: 4px; }
+  .header-nav { display: flex; align-items: center; gap: 32px; }
+  .header-nav a { font-family: 'Jost', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+  .header-nav a:hover { color: var(--rose-deep); }
+  .header-actions { display: flex; align-items: center; gap: 12px; }
+  .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); padding: 9px 20px; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; }
+  .btn-ghost:hover { border-color: var(--rose); color: var(--rose-deep); }
+  .btn-primary { background: var(--text); color: var(--white); border: none; padding: 10px 24px; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; transition: background 0.2s; }
+  .btn-primary:hover { background: var(--rose-deep); }
+
+  /* HERO */
+  .hero { min-height: 92vh; display: grid; grid-template-columns: 1fr 1fr; max-width: 100%; overflow: hidden; }
+  .hero-left { background: var(--blush-light); display: flex; flex-direction: column; justify-content: center; padding: 80px 64px 80px 80px; position: relative; }
+  .hero-left::after { content: ''; position: absolute; right: -1px; top: 15%; bottom: 15%; width: 1px; background: var(--blush-mid); }
+  .hero-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+  .hero-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--rose); display: inline-block; }
+  .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(52px, 6vw, 84px); font-weight: 400; line-height: 1.05; color: var(--text); margin-bottom: 28px; letter-spacing: -0.01em; }
+  .hero-title em { font-style: italic; color: var(--rose-deep); }
+  .hero-body { font-size: 15px; font-weight: 300; color: var(--text-mid); line-height: 1.9; max-width: 420px; margin-bottom: 40px; }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-rose { background: var(--rose-deep); color: var(--white); border: none; padding: 14px 32px; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; display: inline-block; }
+  .btn-rose:hover { background: var(--text); }
+  .btn-outline-rose { background: transparent; color: var(--rose-deep); border: 1px solid var(--rose); padding: 13px 28px; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; display: inline-block; }
+  .btn-outline-rose:hover { background: var(--blush); }
+  .hero-stats { display: flex; gap: 36px; margin-top: 52px; padding-top: 36px; border-top: 1px solid var(--border); }
+  .stat-number { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 500; color: var(--text); line-height: 1; }
+  .stat-label { font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light); margin-top: 4px; }
+  .hero-right { position: relative; overflow: hidden; background: var(--blush); }
+  .hero-right img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+  .hero-right-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(242,222,221,0.12) 0%, transparent 60%); }
+  .hero-badge { position: absolute; bottom: 40px; left: 40px; background: rgba(253,250,247,0.92); backdrop-filter: blur(8px); border: 1px solid var(--border); padding: 20px 24px; }
+  .hero-badge-quote { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: var(--text); line-height: 1.5; margin-bottom: 6px; }
+  .hero-badge-name { font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose); }
+
+  /* MARQUEE */
+  .marquee-bar { background: var(--text); padding: 14px 0; overflow: hidden; white-space: nowrap; }
+  .marquee-track { display: inline-flex; animation: marquee 28s linear infinite; }
+  .marquee-item { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-style: italic; color: rgba(255,255,255,0.75); padding: 0 36px; letter-spacing: 0.04em; }
+  .marquee-dot { color: var(--rose); font-style: normal; font-family: 'Jost', sans-serif; font-size: 12px; }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* SECTIONS */
+  .section { padding: 96px 48px; }
+  .section-inner { max-width: 1240px; margin: 0 auto; }
+  .section-label { font-size: 10px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); margin-bottom: 14px; display: flex; align-items: center; gap: 12px; }
+  .section-label::before { content: ''; width: 24px; height: 1px; background: var(--rose); display: inline-block; }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 4vw, 54px); font-weight: 400; color: var(--text); line-height: 1.1; letter-spacing: -0.01em; margin-bottom: 16px; }
+  .section-title em { font-style: italic; color: var(--rose-deep); }
+  .section-body { font-size: 15px; font-weight: 300; color: var(--text-mid); line-height: 1.9; max-width: 520px; }
+  .section-header { margin-bottom: 56px; }
+
+  /* PHILOSOPHY */
+  .philosophy { background: var(--blush-light); }
+  .philosophy-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 56px; }
+  .philosophy-card { background: var(--cream); padding: 44px 36px; }
+  .phil-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: var(--blush-mid); line-height: 1; margin-bottom: 20px; }
+  .phil-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: var(--text); margin-bottom: 12px; font-style: italic; }
+  .phil-body { font-size: 13px; font-weight: 300; color: var(--text-mid); line-height: 1.9; }
+
+  /* BUNDLE */
+  .bundle-section { background: var(--cream); }
+  .bundle-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+  .bundle-visual { background: var(--blush-light); border: 1px solid var(--border); padding: 56px 40px; text-align: center; position: relative; }
+  .bundle-tag { position: absolute; top: -1px; left: 50%; transform: translateX(-50%); background: var(--rose-deep); color: var(--white); font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 6px 20px; white-space: nowrap; }
+  .bundle-icon { font-size: 52px; margin-bottom: 20px; }
+  .bundle-name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; font-style: italic; color: var(--text); margin-bottom: 8px; }
+  .bundle-tagline { font-size: 12px; color: var(--text-light); letter-spacing: 0.1em; margin-bottom: 28px; }
+  .bundle-items { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+  .bundle-item { display: flex; align-items: center; gap: 12px; background: var(--white); border: 1px solid var(--border); padding: 14px 18px; font-size: 12px; color: var(--text-mid); text-align: left; }
+  .bundle-item-icon { font-size: 18px; flex-shrink: 0; }
+  .bundle-item-name { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 500; color: var(--text); }
+  .bundle-price-wrap { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 20px; }
+  .bundle-price { font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 500; color: var(--text); }
+  .bundle-orig { font-size: 18px; color: var(--text-light); text-decoration: line-through; font-family: 'Cormorant Garamond', serif; }
+  .bundle-save { background: var(--blush-mid); color: var(--rose-deep); font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 12px; }
+  .bundle-content h3 { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 16px; line-height: 1.2; }
+  .bundle-content p { font-size: 14px; font-weight: 300; color: var(--text-mid); line-height: 1.9; margin-bottom: 20px; }
+  .bundle-feature-list { list-style: none; margin-bottom: 36px; display: flex; flex-direction: column; gap: 10px; }
+  .bundle-feature-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--text-mid); font-weight: 300; }
+  .bundle-feature-list li::before { content: '✦'; color: var(--rose); font-size: 10px; margin-top: 3px; flex-shrink: 0; }
+  .bundle-guarantee { display: flex; align-items: center; gap: 10px; background: var(--blush-light); border: 1px solid var(--border); padding: 14px 18px; font-size: 12px; color: var(--text-mid); margin-top: 16px; }
+
+  /* JOURNAL */
+  .journal-section { background: var(--blush-light); }
+  .journal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 56px; }
+  .journal-card { background: var(--white); border: 1px solid var(--border); padding: 36px 30px; transition: transform 0.22s, box-shadow 0.22s; }
+  .journal-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px var(--shadow); }
+  .journal-icon { font-size: 28px; margin-bottom: 18px; }
+  .journal-category { font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--rose); margin-bottom: 10px; }
+  .journal-prompt { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; font-style: italic; color: var(--text); line-height: 1.45; margin-bottom: 14px; }
+  .journal-hint { font-size: 12px; color: var(--text-light); font-weight: 300; line-height: 1.7; }
+  .journal-unlock { grid-column: 1 / -1; background: var(--text); padding: 40px; text-align: center; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+  .journal-unlock-text h4 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; font-style: italic; color: var(--white); margin-bottom: 6px; }
+  .journal-unlock-text p { font-size: 13px; color: rgba(255,255,255,0.55); }
+
+  /* AFFIRMATIONS */
+  .affirmations-section { background: var(--cream); }
+  .affirmations-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 72px; align-items: center; }
+  .affirmation-stack { display: flex; flex-direction: column; gap: 12px; }
+  .affirmation-card { background: var(--blush-light); border-left: 3px solid var(--rose); padding: 22px 24px; font-family: 'Cormorant Garamond', serif; font-size: 18px; font-style: italic; color: var(--text); line-height: 1.5; transition: border-color 0.2s; }
+  .affirmation-card:hover { border-color: var(--rose-deep); }
+  .affirmation-card.featured { background: var(--text); color: var(--white); border-color: var(--rose); font-size: 22px; }
+
+  /* BEAUTY */
+  .beauty-section { background: var(--blush-light); }
+  .category-tabs { display: flex; gap: 0; flex-wrap: wrap; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  .cat-tab { background: transparent; border: none; border-bottom: 2px solid transparent; color: var(--text-light); font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 14px 20px; cursor: pointer; white-space: nowrap; transition: all 0.18s; }
+  .cat-tab.active { color: var(--rose-deep); border-bottom-color: var(--rose-deep); }
+  .cat-tab:hover { color: var(--text); }
+  .beauty-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 18px; }
+  .product-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+  .product-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px var(--shadow); }
+  .product-img { width: 100%; aspect-ratio: 1/1; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+  .p-bg1 { background: linear-gradient(135deg,#fdf0f0,#fae4e4); }
+  .p-bg2 { background: linear-gradient(135deg,#fdf8ed,#f9f0d8); }
+  .p-bg3 { background: linear-gradient(135deg,#edf4fb,#daeaf7); }
+  .p-bg4 { background: linear-gradient(135deg,#edfaf0,#d8f2e0); }
+  .p-bg5 { background: linear-gradient(135deg,#f3edfb,#e8d8f7); }
+  .p-bg6 { background: linear-gradient(135deg,#fbedf0,#f7d8de); }
+  .card-badge { position: absolute; top: 10px; left: 10px; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 9px; }
+  .badge-pick { background: var(--text); color: var(--white); }
+  .badge-new { background: var(--rose); color: var(--white); }
+  .badge-sale { background: #a06040; color: var(--white); }
+  .badge-tried { background: var(--blush-mid); color: var(--rose-deep); }
+  .product-info { padding: 14px 16px 16px; }
+  .product-brand { font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--rose); margin-bottom: 4px; }
+  .product-name { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 5px; line-height: 1.3; }
+  .product-desc { font-size: 11px; color: var(--text-light); line-height: 1.6; margin-bottom: 12px; font-style: italic; }
+  .product-footer { display: flex; align-items: center; justify-content: space-between; }
+  .product-price { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 500; color: var(--text); }
+  .shop-btn { background: transparent; color: var(--rose-deep); font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 14px; border: 1px solid var(--blush-mid); text-decoration: none; transition: all 0.18s; }
+  .shop-btn:hover { background: var(--rose-deep); color: var(--white); border-color: var(--rose-deep); }
+  .coming-soon { background: var(--cream); border: 1px dashed var(--border); padding: 36px; text-align: center; color: var(--text-light); grid-column: 1/-1; font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; }
+  .category-section-panel { display: none; }
+  .category-section-panel.active { display: block; }
+
+  /* TRUST */
+  .trust-section { background: var(--champagne); }
+  .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+  .trust-card { background: var(--cream); padding: 36px 28px; text-align: center; }
+  .trust-icon { font-size: 28px; margin-bottom: 14px; }
+  .trust-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 500; font-style: italic; color: var(--text); margin-bottom: 8px; }
+  .trust-body { font-size: 12px; color: var(--text-light); font-weight: 300; line-height: 1.7; }
+
+  /* NEWSLETTER */
+  .newsletter-section { background: var(--text); padding: 96px 48px; text-align: center; }
+  .newsletter-section .section-label { justify-content: center; }
+  .newsletter-section .section-label::before { background: var(--rose); }
+  .newsletter-section .section-title { color: var(--white); }
+  .newsletter-section .section-title em { color: var(--blush-mid); }
+  .newsletter-section .section-body { color: rgba(255,255,255,0.55); margin: 0 auto 40px; text-align: center; }
+  .nl-form { display: flex; max-width: 480px; margin: 0 auto; }
+  .nl-input { flex: 1; padding: 14px 22px; border: 1px solid rgba(255,255,255,0.15); border-right: none; background: rgba(255,255,255,0.06); color: var(--white); font-family: 'Jost', sans-serif; font-size: 13px; outline: none; }
+  .nl-input::placeholder { color: rgba(255,255,255,0.32); }
+  .nl-input:focus { border-color: var(--rose); }
+  .nl-btn { background: var(--rose-deep); color: var(--white); border: none; padding: 14px 28px; font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; white-space: nowrap; }
+  .nl-btn:hover { background: var(--rose); }
+  .nl-note { font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 14px; }
+
+  /* FOOTER */
+  footer { background: #140e0e; padding: 64px 48px 32px; }
+  .footer-inner { max-width: 1240px; margin: 0 auto; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
+  .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; font-style: italic; color: var(--white); margin-bottom: 10px; display: block; }
+  .footer-brand p { font-size: 12px; color: rgba(255,255,255,0.4); font-weight: 300; line-height: 1.8; max-width: 260px; }
+  .footer-col h5 { font-size: 9px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--rose); margin-bottom: 18px; }
+  .footer-col a { display: block; font-size: 12px; color: rgba(255,255,255,0.45); text-decoration: none; margin-bottom: 10px; font-weight: 300; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--blush-mid); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .footer-bottom p { font-size: 11px; color: rgba(255,255,255,0.25); font-weight: 300; }
+  .footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; }
+
+  /* MODAL */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(20,14,14,0.6); backdrop-filter: blur(10px); z-index: 300; align-items: center; justify-content: center; }
+  .modal-overlay.open { display: flex; }
+  .modal { background: var(--cream); padding: 52px 40px; max-width: 400px; width: 90%; text-align: center; position: relative; box-shadow: 0 40px 100px rgba(20,14,14,0.3); animation: pop 0.3s cubic-bezier(0.175,0.885,0.32,1.275) both; }
+  @keyframes pop { from { transform: scale(0.93); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  .modal-close { position: absolute; top: 16px; right: 16px; background: var(--blush-light); border: none; width: 32px; height: 32px; cursor: pointer; color: var(--text-mid); font-size: 13px; display: flex; align-items: center; justify-content: center; transition: background 0.15s; }
+  .modal-close:hover { background: var(--border); }
+  .modal-flower { font-size: 42px; margin-bottom: 16px; }
+  .modal h3 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 8px; }
+  .modal p { font-size: 13px; color: var(--text-light); margin-bottom: 24px; line-height: 1.7; }
+  .modal-form { display: flex; flex-direction: column; gap: 10px; }
+  .modal-input { padding: 13px 16px; border: 1px solid var(--border); font-family: 'Jost', sans-serif; font-size: 13px; outline: none; background: var(--blush-light); color: var(--text); transition: border-color 0.2s; }
+  .modal-input:focus { border-color: var(--rose); }
+  .modal-input::placeholder { color: var(--text-light); }
+  .modal-submit { background: var(--rose-deep); color: var(--white); border: none; padding: 14px; font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; cursor: pointer; transition: background 0.18s; }
+  .modal-submit:hover { background: var(--text); }
+  .modal-note { font-size: 11px; color: var(--text-light); margin-top: 10px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    .hero-left { padding: 64px 32px; }
+    .bundle-layout { grid-template-columns: 1fr; }
+    .affirmations-layout { grid-template-columns: 1fr; }
+    .philosophy-grid { grid-template-columns: 1fr; }
+    .journal-grid { grid-template-columns: 1fr; }
+    .trust-grid { grid-template-columns: 1fr 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    header { padding: 0 24px; }
+    .header-nav { display: none; }
+    .section { padding: 64px 24px; }
+  }
+  @media (max-width: 600px) {
+    .trust-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; }
+    .nl-form { flex-direction: column; }
+    .nl-input { border-right: 1px solid rgba(255,255,255,0.15); }
+    .hero-stats { flex-wrap: wrap; gap: 24px; }
+    .newsletter-section { padding: 64px 24px; }
+    footer { padding: 48px 24px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="announce-bar">
+  The Glow-Up Bundle is live — journal, eBook and planner in one.
+  <a href="#bundle">Shop Now</a>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo-block">
+      <span class="logo-main">Art Is You</span>
+      <span class="logo-sub">by MsLeonuh</span>
+    </a>
+    <nav class="header-nav">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#bundle">Bundle</a>
+      <a href="#journal">Journal</a>
+      <a href="#beauty">Beauty</a>
+      <a href="#affirmations">Affirmations</a>
+    </nav>
+    <div class="header-actions">
+      <a href="mailto:MsLeonuh@gmail.com" class="btn-ghost">Contact</a>
+      <button class="btn-primary" onclick="openModal()">Subscribe</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Glow From the Inside Out</div>
+    <h1 class="hero-title">The glow-up<br>starts <em>within.</em></h1>
+    <p class="hero-body">Art Is You is a space for young women building wealth, beauty and confidence on their own terms. Journal prompts, financial affirmations, curated beauty — everything you need to become your most magnetic self.</p>
+    <div class="hero-ctas">
+      <a href="#bundle" class="btn-rose">Get the Bundle</a>
+      <a href="#journal" class="btn-outline-rose">Free Prompts</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Digital Products</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Beauty Picks</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">∞</div>
+        <div class="stat-label">Manifestation</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="https://msleonuh.github.io/links/msleonuh.jpeg" alt="MsLeonuh">
+    <div class="hero-right-overlay"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-quote">"Art is not what you see,<br>but what you make others see."</div>
+      <div class="hero-badge-name">Art Is You · MsLeonuh</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span class="marquee-item">Art Is You <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Manifest Wealth <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Glow From Within <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Old Money Energy <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">You Are the Investment <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Beauty Is Intentional <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Art Is You <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Manifest Wealth <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Glow From Within <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Old Money Energy <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">You Are the Investment <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Beauty Is Intentional <span class="marquee-dot">✦</span></span>
+  </div>
+</div>
+
+<section class="section philosophy" id="philosophy">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Our Philosophy</div>
+      <h2 class="section-title">You were never <em>behind.</em></h2>
+      <p class="section-body">Art Is You is built on one belief: you are already everything you need to become. This is the space where we get intentional about it.</p>
+    </div>
+    <div class="philosophy-grid">
+      <div class="philosophy-card">
+        <div class="phil-num">01</div>
+        <div class="phil-title">Wealth is a mindset first.</div>
+        <p class="phil-body">Before the money comes, the belief has to. Our financial affirmations eBook rewires how you see money — quietly, powerfully, daily.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="phil-num">02</div>
+        <div class="phil-title">Reflection is the ultimate luxury.</div>
+        <p class="phil-body">Old money women don't rush. They plan, they reflect, they move with intention. Our journal prompts and planner give you that space.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="phil-num">03</div>
+        <div class="phil-title">Your outside mirrors your inside.</div>
+        <p class="phil-body">We curate beauty because how you present yourself to the world matters. When you glow inside, it shows outside.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bundle-section" id="bundle">
+  <div class="section-inner">
+    <div class="bundle-layout">
+      <div class="bundle-visual">
+        <div class="bundle-tag">Most Popular</div>
+        <div class="bundle-icon">🌸</div>
+        <div class="bundle-name">The Glow-Up Bundle</div>
+        <div class="bundle-tagline">Everything you need · Nothing you don't</div>
+        <div class="bundle-items">
+          <div class="bundle-item">
+            <span class="bundle-item-icon">📓</span>
+            <div>
+              <div class="bundle-item-name">The Art Is You Journal</div>
+              <div style="font-size:11px;color:var(--text-light);margin-top:2px;">60 prompts for wealth, beauty and identity</div>
+            </div>
+          </div>
+          <div class="bundle-item">
+            <span class="bundle-item-icon">💰</span>
+            <div>
+              <div class="bundle-item-name">Financial Affirmations eBook</div>
+              <div style="font-size:11px;color:var(--text-light);margin-top:2px;">50 affirmations to rewire your money mindset</div>
+            </div>
+          </div>
+          <div class="bundle-item">
+            <span class="bundle-item-icon">🗓️</span>
+            <div>
+              <div class="bundle-item-name">The Manifest Planner PDF</div>
+              <div style="font-size:11px;color:var(--text-light);margin-top:2px;">Weekly and monthly wealth planning pages</div>
+            </div>
+          </div>
+        </div>
+        <div class="bundle-price-wrap">
+          <div class="bundle-price">$27</div>
+          <div>
+            <div class="bundle-orig">$67</div>
+            <div class="bundle-save">Save 60%</div>
+          </div>
+        </div>
+        <a href="#" class="btn-rose" style="display:block;width:100%;text-align:center;">Get Instant Access</a>
+        <p style="font-size:11px;color:var(--text-light);margin-top:12px;">Instant download · PDF format · No subscription</p>
+      </div>
+      <div class="bundle-content">
+        <div class="section-label">The Bundle</div>
+        <h3>Three tools.<br>One <em>transformation.</em></h3>
+        <p>This is not a self-help package. This is a system — built for young women who are done waiting for their life to start and ready to build it, deliberately and beautifully.</p>
+        <p>Whether you are manifesting your first $10K, paying off debt, or simply trying to feel more aligned — this bundle meets you exactly where you are.</p>
+        <ul class="bundle-feature-list">
+          <li>Journal prompts that go deeper than "what are you grateful for"</li>
+          <li>Financial affirmations grounded in real money psychology</li>
+          <li>A planner designed around how wealth actually builds</li>
+          <li>Printable and fillable — works with any printer or tablet</li>
+          <li>Instant digital delivery — no waiting, no shipping</li>
+          <li>Yours forever — re-download anytime</li>
+        </ul>
+        <a href="#" class="btn-rose">Yes, I Want This</a>
+        <div class="bundle-guarantee">🔒 &nbsp; <span><strong>Satisfaction Guarantee</strong> — if it does not serve you, reach out within 7 days.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section journal-section" id="journal">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Free Prompts</div>
+      <h2 class="section-title">Start your <em>reflection</em> today.</h2>
+      <p class="section-body">A taste of the Art Is You journal. These prompts are yours, free. The full 60-prompt collection is inside the bundle.</p>
+    </div>
+    <div class="journal-grid">
+      <div class="journal-card">
+        <div class="journal-icon">💭</div>
+        <div class="journal-category">Identity</div>
+        <div class="journal-prompt">"Who would I be if I stopped shrinking for other people's comfort?"</div>
+        <div class="journal-hint">Write for 10 minutes without stopping. Don't edit. Don't judge.</div>
+      </div>
+      <div class="journal-card">
+        <div class="journal-icon">💸</div>
+        <div class="journal-category">Wealth</div>
+        <div class="journal-prompt">"What is one limiting belief about money I inherited — and is it actually true?"</div>
+        <div class="journal-hint">Trace it back. Where did you first hear it? Who said it?</div>
+      </div>
+      <div class="journal-card">
+        <div class="journal-icon">🌸</div>
+        <div class="journal-category">Beauty</div>
+        <div class="journal-prompt">"Describe the version of yourself that feels most beautiful. What does she do differently?"</div>
+        <div class="journal-hint">Not what she looks like. What she does, thinks, prioritises.</div>
+      </div>
+      <div class="journal-card">
+        <div class="journal-icon">✨</div>
+        <div class="journal-category">Manifestation</div>
+        <div class="journal-prompt">"Write a letter from your future self — from 3 years ahead."</div>
+        <div class="journal-hint">Be specific. What did she figure out? What does she want you to know now?</div>
+      </div>
+      <div class="journal-card">
+        <div class="journal-icon">🏛️</div>
+        <div class="journal-category">Old Money Energy</div>
+        <div class="journal-prompt">"What would I stop tolerating if I truly believed I was worth more?"</div>
+        <div class="journal-hint">List it. People, habits, situations, thoughts. All of it.</div>
+      </div>
+      <div class="journal-unlock">
+        <div class="journal-unlock-text">
+          <h4>60 prompts are waiting inside the bundle.</h4>
+          <p>Wealth · Identity · Manifestation · Beauty · Legacy · Confidence</p>
+        </div>
+        <a href="#bundle" class="btn-rose">Get the Full Journal</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section affirmations-section" id="affirmations">
+  <div class="section-inner">
+    <div class="affirmations-layout">
+      <div>
+        <div class="section-label">Financial Affirmations</div>
+        <h2 class="section-title">Money flows <em>to me</em> easily.</h2>
+        <p class="section-body" style="margin-bottom:32px;">The Financial Affirmations eBook inside the bundle contains 50 affirmations written specifically for young women building wealth — not borrowed from hustle culture, but rooted in ease, identity and alignment.</p>
+        <p class="section-body" style="margin-bottom:36px;">Read one each morning. Journal on one each week. Watch the shift happen quietly, then powerfully.</p>
+        <a href="#bundle" class="btn-rose">Get the eBook in the Bundle</a>
+      </div>
+      <div class="affirmation-stack">
+        <div class="affirmation-card featured">"I am building wealth slowly, intentionally, and on my own terms."</div>
+        <div class="affirmation-card">"Money is not something I chase — it is something I attract."</div>
+        <div class="affirmation-card">"I release the guilt of wanting more. Abundance is my birthright."</div>
+        <div class="affirmation-card">"I make decisions from a place of wealth, not scarcity."</div>
+        <div class="affirmation-card">"The life I am building is already happening. I trust the process."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section beauty-section" id="beauty">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Beauty Picks</div>
+      <h2 class="section-title">The outside <em>reflects</em> the inside.</h2>
+      <p class="section-body">Honest, curated beauty — products MsLeonuh actually uses and loves. Some links are affiliate links; I earn a small commission at no extra cost to you.</p>
+    </div>
+    <div class="category-tabs">
+      <button class="cat-tab active" onclick="switchBeauty('skincare',this)">Skincare</button>
+      <button class="cat-tab" onclick="switchBeauty('makeup',this)">Makeup</button>
+      <button class="cat-tab" onclick="switchBeauty('haircare',this)">Hair Care</button>
+      <button class="cat-tab" onclick="switchBeauty('nails',this)">Nails</button>
+      <button class="cat-tab" onclick="switchBeauty('fragrance',this)">Fragrance</button>
+      <button class="cat-tab" onclick="switchBeauty('fashion',this)">Fashion</button>
+      <button class="cat-tab" onclick="switchBeauty('accessories',this)">Accessories</button>
+    </div>
+
+    <div class="category-section-panel active" id="bp-skincare">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/6114+JwAd4L._AC_SL1200_.jpg" alt="MEDIHEAL" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">MEDIHEAL</p><p class="product-name">Collagen Toner Pads</p><p class="product-desc">100 pads with retinol and peptides.</p><div class="product-footer"><span class="product-price">$23.99</span><a href="https://amzn.to/4n1Owv9" target="_blank" class="shop-btn" rel="noopener">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51ANDu4OdpL._AC_SL1080_.jpg" alt="Dr.Althea" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">Dr.Althea</p><p class="product-name">345 Relief Cream</p><p class="product-desc">For sensitive skin.</p><div class="product-footer"><span class="product-price">$27.98</span><a href="https://amzn.to/4tQUq4O" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61sSYnrc1zL._AC_SL1500_.jpg" alt="ANUA" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">ANUA</p><p class="product-name">Azelaic Acid 10 Hyaluron</p><p class="product-desc">Redness soothing serum.</p><div class="product-footer"><span class="product-price">$30.99</span><a href="https://amzn.to/4wG0KxS" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/71GY26iqg+L._AC_SL1500_.jpg" alt="Dove" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">Dove</p><p class="product-name">Body Scrub</p><p class="product-desc">For silky soft skin.</p><div class="product-footer"><span class="product-price">$10.86</span><a href="https://amzn.to/4tNvGdP" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51WI5ogyzNL._SL1240_.jpg" alt="The Ordinary" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">The Ordinary</p><p class="product-name">HA 30% + BHA 2% Peeling Solution</p><p class="product-desc">Smoother, brighter skin.</p><div class="product-footer"><span class="product-price">$13.00</span><a href="https://amzn.to/3REGDzS" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51bC4vVdkOL._SL1240_.jpg" alt="The Ordinary" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">The Ordinary</p><p class="product-name">Glycolic Acid</p><p class="product-desc">Brightening daily toner.</p><div class="product-footer"><span class="product-price">$15.80</span><a href="https://amzn.to/4nzMRx1" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51HeCyjIvWL._AC_SL1000_.jpg" alt="Mixsoon" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">-16% Off</span></div><div class="product-info"><p class="product-brand">Mixsoon</p><p class="product-name">Bean Essence</p><p class="product-desc">Glass skin finish.</p><div class="product-footer"><span class="product-price">$45.99</span><a href="https://amzn.to/48G1etv" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51Kpw2r-pIL._AC_SL1000_.jpg" alt="ANUA" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">ANUA</p><p class="product-name">Heartleaf Pore Cleansing Foam</p><p class="product-desc">Clears pores gently.</p><div class="product-footer"><span class="product-price">$23.64</span><a href="https://amzn.to/490xvvF" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/41USmqpEmgL._AC_SL1000_.jpg" alt="ANUA" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">ANUA</p><p class="product-name">Heartleaf Pore Cleansing Oil</p><p class="product-desc">Deep pore cleanse.</p><div class="product-footer"><span class="product-price">$36.54</span><a href="https://amzn.to/4uF1nG2" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51cLnb6BkZL._AC_SL1500_.jpg" alt="ANUA" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">ANUA</p><p class="product-name">Heartleaf Control Cleansing Oil</p><p class="product-desc">Blackhead removal daily.</p><div class="product-footer"><span class="product-price">$27.50</span><a href="https://amzn.to/42ya88U" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51utpRckeQL._AC_SL1500_.jpg" alt="Celimax" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">-9% Off</span></div><div class="product-info"><p class="product-brand">Celimax</p><p class="product-name">Vita A Retinal Shot</p><p class="product-desc">Pore minimizer and firmer skin.</p><div class="product-footer"><span class="product-price">$26.49</span><a href="https://amzn.to/4tlspkX" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61UfgKn571L._AC_SL1500_.jpg" alt="SKIN1004" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">SKIN1004</p><p class="product-name">Centella Clay Stick Mask</p><p class="product-desc">Detox and blackhead removal.</p><div class="product-footer"><span class="product-price">$23.15</span><a href="https://amzn.to/3RJexn7" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51UfDYLmE6L._AC_SL1080_.jpg" alt="Purito" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">-10% Off</span></div><div class="product-info"><p class="product-brand">Purito</p><p class="product-name">Bamboo Panthenol Cream</p><p class="product-desc">Restores skin barrier.</p><div class="product-footer"><span class="product-price">$35.99</span><a href="https://amzn.to/48LAUye" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61ezuGEUBDL._AC_SL1500_.jpg" alt="EUTHYMOL" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">EUTHYMOL</p><p class="product-name">Original Toothpaste</p><p class="product-desc">Whitening and cavity prevention.</p><div class="product-footer"><span class="product-price">$28.75</span><a href="https://amzn.to/3R1o20I" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51foLQC5-7L._AC_SL1000_.jpg" alt="Vaseline" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">Vaseline</p><p class="product-name">Gluta-Hya Body Lotion</p><p class="product-desc">Dewy radiance, alcohol free.</p><div class="product-footer"><span class="product-price">$19.99</span><a href="https://amzn.to/48ySGVh" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61Qu-FBI0IL._SL1500_.jpg" alt="La Roche Posay" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">La Roche Posay</p><p class="product-name">Cicaplast Hand Cream</p><p class="product-desc">Instant relief for dry hands.</p><div class="product-footer"><span class="product-price">$15.00</span><a href="https://amzn.to/4dye1zD" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61BitEhf6OL._AC_SL1500_.jpg" alt="SKIN1004" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">-35% Off</span></div><div class="product-info"><p class="product-brand">SKIN1004</p><p class="product-name">Centella Brightening Ampoule</p><p class="product-desc">Erases hyperpigmentation.</p><div class="product-footer"><span class="product-price">$21.49</span><a href="https://amzn.to/4n1Owv9" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+
+    <div class="category-section-panel" id="bp-makeup">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61rAzWsvImL._AC_SL1500_.jpg" alt="L'Oreal" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">L'Oreal Paris</p><p class="product-name">Divine Wine Lipstick</p><p class="product-desc">Original Satin finish.</p><div class="product-footer"><span class="product-price">$12.99</span><a href="https://amzn.to/4tLXpLP" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/71bTEkg88ML._AC_SL1500_.jpg" alt="Chanel" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Chanel</p><p class="product-name">Les 4 Ombres Eyeshadow</p><p class="product-desc">Long-lasting pigments.</p><div class="product-footer"><span class="product-price">$139.03</span><a href="https://amzn.to/4f1sIxu" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://i.pinimg.com/1200x/04/17/28/0417285ee44f802c9998e56709973990.jpg" alt="Maybelline" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Maybelline</p><p class="product-name">Instant Age Rewind Eraser</p><p class="product-desc">Concealer and contour.</p><div class="product-footer"><span class="product-price">$13.48</span><a href="https://amzn.to/42iNcdL" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg4"><img src="https://i.pinimg.com/1200x/5b/d9/63/5bd9637a66e1ba9b1495b7dad0118339.jpg" alt="Maybelline mascara" style="width:100%;height:100%;object-fit:cover;"></div><div class="product-info"><p class="product-brand">Maybelline</p><p class="product-name">Sky High Mascara</p><p class="product-desc">Volumizing and lengthening.</p><div class="product-footer"><span class="product-price">$12.95</span><a href="https://amzn.to/49qrHeM" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+
+    <div class="category-section-panel" id="bp-haircare">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/61rm+qr8mLL._AC_SL1000_.jpg" alt="Fino" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Fino Premium</p><p class="product-name">Penetration Hair Mask</p><p class="product-desc">UV protection and renewal.</p><div class="product-footer"><span class="product-price">$21.95</span><a href="https://amzn.to/49E49Dk" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/71kv7ZWyY7L._AC_SL1500_.jpg" alt="Kitsch" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kitsch</p><p class="product-name">Rustic Vanilla Hair Mist</p><p class="product-desc">Freshen hair and body.</p><div class="product-footer"><span class="product-price">$28.99</span><a href="https://amzn.to/497HyyX" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/71KvkqGdkuL._AC_SL1500_.jpg" alt="Kitsch" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kitsch</p><p class="product-name">Warm Sugar Hair Spray</p><p class="product-desc">Odor-eliminating technology.</p><div class="product-footer"><span class="product-price">$28.99</span><a href="https://amzn.to/4dFYePt" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://i.pinimg.com/1200x/4a/ba/45/4aba45dcb08deec6fc5e6678f0e1aa2b.jpg" alt="Kerastase" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kerastase</p><p class="product-name">Elixir Ultime Hair Oil</p><p class="product-desc">Smooth frizz, add shine.</p><div class="product-footer"><span class="product-price">$46.00</span><a href="https://amzn.to/4dmrvjg" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/61OLMvoFOHL._SL1500_.jpg" alt="Olaplex" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Olaplex No. 5</p><p class="product-name">Bond Maintenance Conditioner</p><p class="product-desc">Repairs all hair types.</p><div class="product-footer"><span class="product-price">$49.00</span><a href="https://amzn.to/49glVMR" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/61EsvOWTNoL._AC_SL1500_.jpg" alt="Kerastase" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kerastase</p><p class="product-name">Shampoo for Oily Scalp</p><p class="product-desc">Balancing, silicone free.</p><div class="product-footer"><span class="product-price">$62.00</span><a href="https://amzn.to/3RpLjK0" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/61AvkHh74xL._SL1500_.jpg" alt="Kerastase" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kerastase</p><p class="product-name">Gloss Absolu Spray</p><p class="product-desc">Anti-frizz, illuminating.</p><div class="product-footer"><span class="product-price">$67.00</span><a href="https://amzn.to/3RRbKs6" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg3"><img src="https://i.pinimg.com/736x/47/d6/86/47d68673baf27222c6c0de09de37e7bf.jpg" alt="Kerastase" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kerastase</p><p class="product-name">8H Magic Night Serum</p><p class="product-desc">Nourishing overnight shine.</p><div class="product-footer"><span class="product-price">$42.00</span><a href="https://amzn.to/4dyUfnP" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+
+    <div class="category-section-panel" id="bp-nails">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg6"><img src="https://m.media-amazon.com/images/I/811riMu1xHL._AC_SL1500_.jpg" alt="Beetles" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-sale">On Sale</span></div><div class="product-info"><p class="product-brand">Beetles Gel</p><p class="product-name">At-Home Gel Nail Kit</p><p class="product-desc">2+ weeks salon nails at home.</p><div class="product-footer"><span class="product-price">$53.09</span><a href="https://amzn.to/4wGvGhF" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/71fRp7vo9IL._AC_SL1500_.jpg" alt="Sally Hansen" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-sale">On Sale</span></div><div class="product-info"><p class="product-brand">Sally Hansen</p><p class="product-name">Maximum Growth Treatment</p><p class="product-desc">Grow and strengthen nails.</p><div class="product-footer"><span class="product-price">$9.97</span><a href="https://amzn.to/4np5gg2" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+
+    <div class="category-section-panel" id="bp-fragrance">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51TQTRovEBL._AC_SL1000_.jpg" alt="Asdaaf" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">Asdaaf</p><p class="product-name">Ameerat Al Arab EDP</p><p class="product-desc">Compliments guaranteed.</p><div class="product-footer"><span class="product-price">$31.99</span><a href="https://amzn.to/4dCFLDl" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/41UyyF-4GSL._AC_SL1200_.jpg" alt="Byredo" style="width:100%;height:100%;object-fit:cover;"></div><div class="product-info"><p class="product-brand">Byredo</p><p class="product-name">La Tulipe</p><p class="product-desc">Tulip, freesia and rhubarb.</p><div class="product-footer"><span class="product-price">$332.33</span><a href="https://amzn.to/4nS0sQA" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+
+    <div class="category-section-panel" id="bp-fashion">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg3"><img src="https://m.media-amazon.com/images/I/61IPX9C6KeL._AC_SY606_.jpg" alt="YEOREO" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-tried">Tried and Loved</span></div><div class="product-info"><p class="product-brand">YEOREO</p><p class="product-name">Double Lined Fitted Top</p><p class="product-desc">Crew Neck Y2K style.</p><div class="product-footer"><span class="product-price">$26.99</span><a href="https://amzn.to/4fgD4tK" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg5"><img src="https://m.media-amazon.com/images/I/61kyt9bXrwL._AC_SY606_.jpg" alt="AVGO" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">AVGO</p><p class="product-name">Workout Jacket</p><p class="product-desc">Athletic yoga gym top.</p><div class="product-footer"><span class="product-price">$29.89</span><a href="https://amzn.to/3REHaC7" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+
+    <div class="category-section-panel" id="bp-accessories">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg2" style="font-size:44px;">💍<span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">Jewelry</p><p class="product-name">Gold Stacking Rings</p><p class="product-desc">Dainty and tarnish-free.</p><div class="product-footer"><span class="product-price">$28</span><a href="#" class="shop-btn">Shop →</a></div></div></div>
+        <div class="coming-soon">More accessories coming soon — check back weekly.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section trust-section">
+  <div class="section-inner">
+    <div class="trust-grid">
+      <div class="trust-card"><div class="trust-icon">🔒</div><div class="trust-title">Secure Checkout</div><p class="trust-body">All transactions are encrypted. Your information is never shared.</p></div>
+      <div class="trust-card"><div class="trust-icon">⚡</div><div class="trust-title">Instant Delivery</div><p class="trust-body">Digital products delivered immediately after purchase. No waiting.</p></div>
+      <div class="trust-card"><div class="trust-icon">💌</div><div class="trust-title">Real Curation</div><p class="trust-body">Every beauty pick is personally vetted. Only products MsLeonuh actually uses.</p></div>
+      <div class="trust-card"><div class="trust-icon">🌸</div><div class="trust-title">Made with Intention</div><p class="trust-body">Built for young women who are serious about their glow-up — inside and out.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter-section">
+  <div style="max-width:600px;margin:0 auto;">
+    <div class="section-label" style="justify-content:center;">Stay Connected</div>
+    <h2 class="section-title" style="margin-bottom:14px;text-align:center;">Join the <em>inner circle.</em></h2>
+    <p class="section-body" style="text-align:center;margin:0 auto 40px;">Weekly journal prompts, new beauty drops, affirmations and exclusive bundle discounts — straight to your inbox.</p>
+    <form class="nl-form" action="YOUR_MAILCHIMP_URL" method="post" target="_blank">
+      <input type="email" name="EMAIL" placeholder="Your email address" class="nl-input" required>
+      <button type="submit" class="nl-btn">Join Now</button>
+    </form>
+    <p class="nl-note">No spam. Unsubscribe anytime. You deserve only what serves you.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">Art Is You</span>
+        <p>A space for young women building wealth, beauty and confidence on their own terms. By MsLeonuh.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Digital Products</h5>
+        <a href="#bundle">The Glow-Up Bundle</a>
+        <a href="#journal">Journal Prompts</a>
+        <a href="#affirmations">Financial Affirmations</a>
+      </div>
+      <div class="footer-col">
+        <h5>Beauty</h5>
+        <a href="#beauty">Skincare Picks</a>
+        <a href="#beauty">Makeup Picks</a>
+        <a href="#beauty">Hair Care</a>
+        <a href="#beauty">Fragrance</a>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <a href="https://ca.pinterest.com/MsLeonuh/" target="_blank">Pinterest</a>
+        <a href="mailto:MsLeonuh@gmail.com">Email MsLeonuh</a>
+        <a href="#" onclick="openModal()">Newsletter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Art Is You by MsLeonuh · All rights reserved</p>
+      <p>Some beauty links are affiliate links — I earn a small commission at no extra cost to you. Thank you for your support.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-flower">🌸</div>
+    <h3>Join the Inner Circle</h3>
+    <p>Weekly affirmations, journal prompts, beauty drops and exclusive deals. Made for women who are serious about their glow-up.</p>
+    <form class="modal-form" action="YOUR_MAILCHIMP_URL" method="post" target="_blank">
+      <input type="text" name="FNAME" placeholder="First name" class="modal-input">
+      <input type="email" name="EMAIL" placeholder="Email address" class="modal-input" required>
+      <button type="submit" class="modal-submit">I'm In ✨</button>
+    </form>
+    <p class="modal-note">No spam. Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<script>
+  function switchBeauty(cat, btn) {
+    document.querySelectorAll('.category-section-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('bp-' + cat).classList.add('active');
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+  }
+  function openModal() { document.getElementById('modalOverlay').classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeModal() { document.getElementById('modalOverlay').classList.remove('open'); document.body.style.overflow = ''; }
+  function closeModalOutside(e) { if (e.target === document.getElementById('modalOverlay')) closeModal(); }
+</script>
+</body>
+</html>
