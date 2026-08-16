@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Is You — 뷰티 & 스타일 픽스 by MsLeonuh</title>
+<link rel="icon" type="image/png" href="https://msleonuh.github.io/links/Untitled_design.png">
+<meta name="description" content="Art Is You by MsLeonuh — Wonyoungism beauty picks. Skincare, makeup, hair and fragrance products that actually work.">
+<meta name="p:domain_verify" content="38d196c52af3e59b84d9dc07f088575e"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blush:       #f2dedd;
+    --blush-light: #faf3f3;
+    --blush-mid:   #e8c8c6;
+    --rose:        #c9908e;
+    --rose-deep:   #a06b69;
+    --champagne:   #f7f0e8;
+    --cream:       #fdfaf7;
+    --white:       #ffffff;
+    --text:        #1e1818;
+    --text-mid:    #5a4a4a;
+    --text-light:  #9a8a8a;
+    --border:      #ecdede;
+    --shadow:      rgba(30,24,24,0.07);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--text); font-size: 14px; line-height: 1.6; overflow-x: hidden; }
+
+  /* ANNOUNCE */
+  .announce-bar { background: var(--text); color: rgba(255,255,255,0.85); text-align: center; padding: 10px 20px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; }
+  .announce-bar span { color: var(--blush-mid); margin: 0 8px; }
+
+  /* HEADER */
+  header { background: var(--cream); border-bottom: 1px solid var(--border); padding: 0 48px; position: sticky; top: 0; z-index: 200; }
+  .header-inner { max-width: 1240px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .logo-block { display: flex; flex-direction: column; text-decoration: none; }
+  .logo-main { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: var(--text); letter-spacing: 0.06em; line-height: 1; font-style: italic; }
+  .logo-sub { font-family: 'Jost', sans-serif; font-size: 8px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); margin-top: 4px; }
+  .header-nav { display: flex; align-items: center; gap: 32px; }
+  .header-nav a { font-family: 'Jost', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+  .header-nav a:hover { color: var(--rose-deep); }
+  .header-actions { display: flex; align-items: center; gap: 12px; }
+  .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); padding: 9px 20px; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; }
+  .btn-ghost:hover { border-color: var(--rose); color: var(--rose-deep); }
+  .btn-primary { background: var(--text); color: var(--white); border: none; padding: 10px 24px; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; transition: background 0.2s; }
+  .btn-primary:hover { background: var(--rose-deep); }
+
+  /* HERO */
+  .hero { min-height: 92vh; display: grid; grid-template-columns: 1fr 1fr; max-width: 100%; overflow: hidden; }
+  .hero-left { background: var(--blush-light); display: flex; flex-direction: column; justify-content: center; padding: 80px 64px 80px 80px; position: relative; }
+  .hero-left::after { content: ''; position: absolute; right: -1px; top: 15%; bottom: 15%; width: 1px; background: var(--blush-mid); }
+  .hero-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+  .hero-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--rose); display: inline-block; }
+  .hero-korean { font-size: 12px; color: var(--text-light); letter-spacing: 0.08em; margin-bottom: 8px; font-weight: 300; }
+  .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(52px, 6vw, 84px); font-weight: 400; line-height: 1.05; color: var(--text); margin-bottom: 28px; letter-spacing: -0.01em; }
+  .hero-title em { font-style: italic; color: var(--rose-deep); }
+  .hero-body { font-size: 15px; font-weight: 300; color: var(--text-mid); line-height: 1.9; max-width: 420px; margin-bottom: 40px; }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-rose { background: var(--rose-deep); color: var(--white); border: none; padding: 14px 32px; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; display: inline-block; }
+  .btn-rose:hover { background: var(--text); }
+  .btn-outline-rose { background: transparent; color: var(--rose-deep); border: 1px solid var(--rose); padding: 13px 28px; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; display: inline-block; }
+  .btn-outline-rose:hover { background: var(--blush); }
+  .hero-stats { display: flex; gap: 36px; margin-top: 52px; padding-top: 36px; border-top: 1px solid var(--border); }
+  .stat-number { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 500; color: var(--text); line-height: 1; }
+  .stat-label { font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light); margin-top: 4px; }
+  .stat-korean { font-size: 9px; color: var(--rose); margin-top: 2px; letter-spacing: 0.06em; }
+  .hero-right { position: relative; overflow: hidden; background: var(--blush); }
+  .hero-right img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+  .hero-right-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(242,222,221,0.12) 0%, transparent 60%); }
+  .hero-badge { position: absolute; bottom: 40px; left: 40px; background: rgba(253,250,247,0.92); backdrop-filter: blur(8px); border: 1px solid var(--border); padding: 20px 24px; }
+  .hero-badge-korean { font-size: 10px; font-weight: 600; letter-spacing: 0.18em; color: var(--rose); margin-bottom: 4px; }
+  .hero-badge-quote { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-style: italic; color: var(--text); line-height: 1.5; margin-bottom: 6px; }
+  .hero-badge-name { font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose); }
+
+  /* MARQUEE */
+  .marquee-bar { background: var(--text); padding: 14px 0; overflow: hidden; white-space: nowrap; }
+  .marquee-track { display: inline-flex; animation: marquee 32s linear infinite; }
+  .marquee-item { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-style: italic; color: rgba(255,255,255,0.75); padding: 0 32px; letter-spacing: 0.04em; }
+  .marquee-dot { color: var(--rose); font-style: normal; font-family: 'Jost', sans-serif; }
+  @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+  /* WONYOUNG STRIP */
+  .wonyoung-strip { background: var(--blush-light); border-bottom: 1px solid var(--border); padding: 64px 48px; }
+  .wonyoung-inner { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+  .wonyoung-label { font-size: 10px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+  .wonyoung-label::before { content:''; width:20px; height:1px; background:var(--rose); display:inline-block; }
+  .wonyoung-korean-big { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-style: italic; color: var(--text-light); margin-bottom: 14px; letter-spacing: 0.04em; }
+  .wonyoung-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 3.5vw, 48px); font-weight: 400; color: var(--text); line-height: 1.15; margin-bottom: 18px; }
+  .wonyoung-title em { font-style: italic; color: var(--rose-deep); }
+  .wonyoung-body { font-size: 14px; font-weight: 300; color: var(--text-mid); line-height: 1.9; }
+  .wonyoung-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+  .wonyoung-pill { background: var(--white); border: 1px solid var(--border); color: var(--text-mid); font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 8px 18px; cursor: pointer; transition: all 0.2s; }
+  .wonyoung-pill:hover { background: var(--blush); color: var(--rose-deep); border-color: var(--rose); }
+  .wonyoung-right { display: flex; flex-direction: column; gap: 12px; }
+  .wonyoung-card { background: var(--white); border: 1px solid var(--border); padding: 20px 24px; }
+  .wonyoung-card-ko { font-size: 11px; color: var(--rose); letter-spacing: 0.1em; margin-bottom: 6px; font-weight: 500; }
+  .wonyoung-card-text { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; color: var(--text); line-height: 1.45; }
+  .wonyoung-card.featured { background: var(--text); border-color: var(--text); }
+  .wonyoung-card.featured .wonyoung-card-ko { color: var(--blush-mid); }
+  .wonyoung-card.featured .wonyoung-card-text { color: var(--white); }
+
+  /* SECTIONS */
+  .section { padding: 80px 48px; }
+  .section-inner { max-width: 1240px; margin: 0 auto; }
+  .section-label { font-size: 10px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); margin-bottom: 14px; display: flex; align-items: center; gap: 12px; }
+  .section-label::before { content: ''; width: 24px; height: 1px; background: var(--rose); display: inline-block; }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 4vw, 50px); font-weight: 400; color: var(--text); line-height: 1.1; letter-spacing: -0.01em; margin-bottom: 8px; }
+  .section-title em { font-style: italic; color: var(--rose-deep); }
+  .section-korean { font-size: 12px; color: var(--text-light); letter-spacing: 0.08em; margin-bottom: 40px; font-style: italic; }
+
+  /* BEAUTY */
+  .beauty-section { background: var(--blush-light); }
+  .category-tabs { display: flex; gap: 0; flex-wrap: wrap; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  .cat-tab { background: transparent; border: none; border-bottom: 2px solid transparent; margin-bottom: -1px; color: var(--text-light); font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 14px 20px; cursor: pointer; white-space: nowrap; transition: all 0.18s; }
+  .cat-tab.active { color: var(--rose-deep); border-bottom-color: var(--rose-deep); }
+  .cat-tab:hover { color: var(--text); }
+  .beauty-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(196px, 1fr)); gap: 20px; }
+  .product-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: transform 0.22s, box-shadow 0.22s; }
+  .product-card:hover { transform: translateY(-4px); box-shadow: 0 14px 44px var(--shadow); }
+  .product-img { width: 100%; aspect-ratio: 1/1; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+  .p-bg1 { background: linear-gradient(135deg,#fdf0f0,#fae4e4); }
+  .p-bg2 { background: linear-gradient(135deg,#fdf8ed,#f9f0d8); }
+  .p-bg3 { background: linear-gradient(135deg,#edf4fb,#daeaf7); }
+  .p-bg4 { background: linear-gradient(135deg,#edfaf0,#d8f2e0); }
+  .p-bg5 { background: linear-gradient(135deg,#f3edfb,#e8d8f7); }
+  .p-bg6 { background: linear-gradient(135deg,#fbedf0,#f7d8de); }
+  .card-badge { position: absolute; top: 10px; left: 10px; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 9px; }
+  .badge-pick { background: var(--text); color: var(--white); }
+  .badge-new { background: var(--rose); color: var(--white); }
+  .badge-sale { background: #a06040; color: var(--white); }
+  .badge-tried { background: var(--blush-mid); color: var(--rose-deep); }
+  .product-info { padding: 14px 16px 16px; }
+  .product-brand { font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--rose); margin-bottom: 4px; }
+  .product-name { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 5px; line-height: 1.3; }
+  .product-desc { font-size: 11px; color: var(--text-light); line-height: 1.6; margin-bottom: 10px; font-style: italic; }
+  .product-review { font-size: 12px; color: var(--text-mid); line-height: 1.6; margin-bottom: 12px; background: var(--blush-light); border-left: 2px solid var(--rose); padding: 8px 12px; font-style: italic; }
+  .product-footer { display: flex; align-items: center; justify-content: space-between; }
+  .product-price { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 500; color: var(--text); }
+  .shop-btn { background: var(--rose-deep); color: var(--white); font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border: none; text-decoration: none; transition: all 0.18s; }
+  .shop-btn:hover { background: var(--text); }
+  .coming-soon { background: var(--cream); border: 1px dashed var(--border); padding: 36px; text-align: center; color: var(--text-light); grid-column: 1/-1; font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; }
+  .category-section-panel { display: none; }
+  .category-section-panel.active { display: block; }
+
+  /* ABOUT */
+  .about-section { background: var(--text); padding: 80px 48px; }
+  .about-inner { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+  .about-img-wrap { position: relative; }
+  .about-img-wrap img { width: 100%; height: 520px; object-fit: cover; object-position: center top; display: block; }
+  .about-img-frame { position: absolute; inset: -14px; border: 1px solid rgba(201,144,142,0.3); pointer-events: none; }
+  .about-label { font-size: 10px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+  .about-label::before { content:''; width:20px; height:1px; background:var(--rose); display:inline-block; }
+  .about-korean { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: rgba(255,255,255,0.3); margin-bottom: 16px; }
+  .about-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 3.5vw, 48px); font-weight: 400; color: var(--white); line-height: 1.15; margin-bottom: 24px; }
+  .about-title em { font-style: italic; color: var(--blush-mid); }
+  .about-body p { font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.55); line-height: 1.9; margin-bottom: 16px; }
+  .about-body strong { color: rgba(255,255,255,0.85); font-weight: 500; }
+
+  /* TRUST */
+  .trust-section { background: var(--champagne); padding: 64px 48px; }
+  .trust-inner { max-width: 1240px; margin: 0 auto; }
+  .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+  .trust-card { background: var(--cream); padding: 32px 24px; text-align: center; }
+  .trust-icon { font-size: 26px; margin-bottom: 12px; }
+  .trust-title { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 500; font-style: italic; color: var(--text); margin-bottom: 6px; }
+  .trust-ko { font-size: 10px; color: var(--rose); letter-spacing: 0.1em; margin-bottom: 8px; }
+  .trust-body { font-size: 12px; color: var(--text-light); font-weight: 300; line-height: 1.7; }
+
+  /* NEWSLETTER */
+  .newsletter-section { background: var(--text); padding: 88px 48px; text-align: center; }
+  .nl-inner { max-width: 540px; margin: 0 auto; }
+  .nl-ko { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-style: italic; color: rgba(255,255,255,0.3); margin-bottom: 12px; }
+  .nl-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3.5vw, 44px); font-weight: 400; color: var(--white); margin-bottom: 12px; }
+  .nl-title em { font-style: italic; color: var(--blush-mid); }
+  .nl-body { font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 36px; }
+  .nl-form { display: flex; max-width: 460px; margin: 0 auto; }
+  .nl-input { flex: 1; padding: 14px 20px; border: 1px solid rgba(255,255,255,0.15); border-right: none; background: rgba(255,255,255,0.06); color: var(--white); font-family: 'Jost', sans-serif; font-size: 13px; outline: none; }
+  .nl-input::placeholder { color: rgba(255,255,255,0.3); }
+  .nl-input:focus { border-color: var(--rose); }
+  .nl-btn { background: var(--rose-deep); color: var(--white); border: none; padding: 14px 26px; font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; white-space: nowrap; }
+  .nl-btn:hover { background: var(--rose); }
+  .nl-note { font-size: 11px; color: rgba(255,255,255,0.25); margin-top: 12px; }
+
+  /* FOOTER */
+  footer { background: #140e0e; padding: 60px 48px 28px; }
+  .footer-inner { max-width: 1240px; margin: 0 auto; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+  .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; font-style: italic; color: var(--white); display: block; margin-bottom: 4px; }
+  .footer-logo-ko { font-size: 10px; color: var(--rose); letter-spacing: 0.16em; margin-bottom: 12px; display: block; }
+  .footer-brand p { font-size: 12px; color: rgba(255,255,255,0.35); font-weight: 300; line-height: 1.8; max-width: 240px; }
+  .footer-col h5 { font-size: 9px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--rose); margin-bottom: 16px; }
+  .footer-col a { display: block; font-size: 12px; color: rgba(255,255,255,0.4); text-decoration: none; margin-bottom: 9px; font-weight: 300; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--blush-mid); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 22px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .footer-bottom p { font-size: 11px; color: rgba(255,255,255,0.2); font-weight: 300; }
+
+  /* MODAL */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(20,14,14,0.65); backdrop-filter: blur(10px); z-index: 300; align-items: center; justify-content: center; }
+  .modal-overlay.open { display: flex; }
+  .modal { background: var(--cream); padding: 52px 40px; max-width: 400px; width: 92%; text-align: center; position: relative; box-shadow: 0 40px 100px rgba(20,14,14,0.3); animation: pop 0.3s cubic-bezier(0.175,0.885,0.32,1.275) both; }
+  @keyframes pop { from{transform:scale(0.93);opacity:0} to{transform:scale(1);opacity:1} }
+  .modal-close { position: absolute; top: 14px; right: 14px; background: var(--blush-light); border: none; width: 30px; height: 30px; cursor: pointer; color: var(--text-mid); font-size: 13px; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--border); }
+  .modal-icon { font-size: 38px; margin-bottom: 12px; }
+  .modal-ko { font-family: 'Cormorant Garamond', serif; font-size: 13px; font-style: italic; color: var(--rose); margin-bottom: 6px; }
+  .modal h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; color: var(--text); margin-bottom: 8px; }
+  .modal p { font-size: 13px; color: var(--text-light); margin-bottom: 22px; line-height: 1.7; }
+  .modal-form { display: flex; flex-direction: column; gap: 10px; }
+  .modal-input { padding: 13px 16px; border: 1px solid var(--border); font-family: 'Jost', sans-serif; font-size: 13px; outline: none; background: var(--blush-light); color: var(--text); }
+  .modal-input:focus { border-color: var(--rose); }
+  .modal-input::placeholder { color: var(--text-light); }
+  .modal-submit { background: var(--rose-deep); color: var(--white); border: none; padding: 14px; font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; cursor: pointer; }
+  .modal-submit:hover { background: var(--text); }
+  .modal-note { font-size: 11px; color: var(--text-light); margin-top: 10px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 960px) {
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-right { display: none; }
+    .hero-left { padding: 60px 32px; }
+    .wonyoung-inner { grid-template-columns: 1fr; gap: 36px; }
+    .about-inner { grid-template-columns: 1fr; }
+    .about-img-wrap { display: none; }
+    .trust-grid { grid-template-columns: 1fr 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    header { padding: 0 24px; }
+    .header-nav { display: none; }
+    .section { padding: 60px 24px; }
+    .beauty-section { padding: 60px 24px; }
+    .about-section { padding: 60px 24px; }
+    .trust-section { padding: 60px 24px; }
+    .newsletter-section { padding: 60px 24px; }
+    .wonyoung-strip { padding: 60px 24px; }
+  }
+  @media (max-width: 600px) {
+    .trust-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; }
+    .nl-form { flex-direction: column; }
+    .nl-input { border-right: 1px solid rgba(255,255,255,0.15); }
+    .hero-stats { flex-wrap: wrap; gap: 20px; }
+    footer { padding: 48px 24px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="announce-bar">
+  ✦ 뷰티 & 스타일 픽스 <span>·</span> Real products, personally tested <span>·</span> 진짜 제품 ✦
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo-block">
+      <span class="logo-main">Art Is You</span>
+      <span class="logo-sub">by MsLeonuh · 아트 이즈 유</span>
+    </a>
+    <nav class="header-nav">
+      <a href="#beauty">Beauty Picks</a>
+      <a href="#wonyoung">Wonyoungism</a>
+      <a href="#about">About</a>
+      <a href="https://ca.pinterest.com/MsLeonuh/" target="_blank">Pinterest</a>
+    </nav>
+    <div class="header-actions">
+      <a href="mailto:MsLeonuh@gmail.com" class="btn-ghost">Contact</a>
+      <button class="btn-primary" onclick="openModal()">Subscribe</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-korean">아트 이즈 유 — Glow from the inside out</div>
+    <div class="hero-eyebrow">Wonyoungism Beauty</div>
+    <h1 class="hero-title">A More<br><em>Beautiful</em><br>You.</h1>
+    <p class="hero-body">Real products. Real results. Every pick on this site I have personally used — no fillers, no fakes. This is the Wonyoungism approach to beauty: intentional, glowing, and unapologetically you.</p>
+    <div class="hero-ctas">
+      <a href="#beauty" class="btn-rose">Shop the Picks</a>
+      <a href="#about" class="btn-outline-rose">My Story</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-number">30+</div>
+        <div class="stat-label">Products Tested</div>
+        <div class="stat-korean">직접 테스트</div>
+      </div>
+      <div>
+        <div class="stat-number">1.5M</div>
+        <div class="stat-label">Pinterest Views</div>
+        <div class="stat-korean">핀터레스트</div>
+      </div>
+      <div>
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Personally Tried</div>
+        <div class="stat-korean">진짜 후기</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="https://msleonuh.github.io/links/msleonuh.jpeg" alt="MsLeonuh">
+    <div class="hero-right-overlay"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-korean">✦ 나의 글로우업 콤보</div>
+      <div class="hero-badge-quote">"Dove Scrub + Vaseline Gluta-Hya<br>fixed my tan in just weeks."</div>
+      <div class="hero-badge-name">MsLeonuh · Art Is You</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span class="marquee-item">Art Is You <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">아트 이즈 유 <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Wonyoungism Beauty <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">원영주의 <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">A More Beautiful You <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">진짜 제품, 진짜 결과 <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Glow From Within <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">글로우 업 <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Art Is You <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">아트 이즈 유 <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Wonyoungism Beauty <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">원영주의 <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">A More Beautiful You <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">진짜 제품, 진짜 결과 <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Glow From Within <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">글로우 업 <span class="marquee-dot">✦</span></span>
+  </div>
+</div>
+
+<!-- WONYOUNGISM -->
+<div class="wonyoung-strip" id="wonyoung">
+  <div class="wonyoung-inner">
+    <div>
+      <div class="wonyoung-label">The Aesthetic</div>
+      <div class="wonyoung-korean-big">원영주의란 무엇인가?</div>
+      <h2 class="wonyoung-title">What is <em>Wonyoungism?</em></h2>
+      <p class="wonyoung-body" style="margin-bottom:28px;">Wonyoungism (원영주의) is the art of being effortlessly put-together — clean skin, intentional beauty, soft confidence. It's not about being perfect. It's about caring for yourself like you're already the main character. These products are everything I use to live that aesthetic every day.</p>
+      <div class="wonyoung-pills">
+        <button class="wonyoung-pill" onclick="goToBeauty('skincare')">✦ 스킨케어 Glass Skin</button>
+        <button class="wonyoung-pill" onclick="goToBeauty('makeup')">✦ 메이크업 Soft Makeup</button>
+        <button class="wonyoung-pill" onclick="goToBeauty('haircare')">✦ 헤어 Silky Hair</button>
+        <button class="wonyoung-pill" onclick="goToBeauty('fragrance')">✦ 향수 Scent</button>
+      </div>
+    </div>
+    <div class="wonyoung-right">
+      <div class="wonyoung-card featured">
+        <div class="wonyoung-card-ko">✦ 나의 철학</div>
+        <div class="wonyoung-card-text">"Taking care of your skin is not vanity — it is the most basic form of self-respect."</div>
+      </div>
+      <div class="wonyoung-card">
+        <div class="wonyoung-card-ko">유리 피부 — Glass Skin</div>
+        <div class="wonyoung-card-text">"The goal is skin so clear it reflects light. Not heavy coverage — real glow."</div>
+      </div>
+      <div class="wonyoung-card">
+        <div class="wonyoung-card-ko">진짜 제품 — Real Products</div>
+        <div class="wonyoung-card-text">"Every product on this site I have personally used. If it's here, it worked."</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BEAUTY PICKS -->
+<section class="section beauty-section" id="beauty">
+  <div class="section-inner">
+    <div class="section-label">뷰티 픽스 — Beauty Picks</div>
+    <h2 class="section-title">Every product I <em>actually use.</em></h2>
+    <div class="section-korean">직접 써본 제품들만 — Only what I have personally tested</div>
+
+    <div class="category-tabs">
+      <button class="cat-tab active" onclick="switchBeauty('skincare',this)">스킨케어 · Skincare</button>
+      <button class="cat-tab" onclick="switchBeauty('makeup',this)">메이크업 · Makeup</button>
+      <button class="cat-tab" onclick="switchBeauty('haircare',this)">헤어 · Hair Care</button>
+      <button class="cat-tab" onclick="switchBeauty('nails',this)">네일 · Nails</button>
+      <button class="cat-tab" onclick="switchBeauty('fragrance',this)">향수 · Fragrance</button>
+    </div>
+
+    <!-- SKINCARE -->
+    <div class="category-section-panel active" id="bp-skincare">
+      <div class="beauty-grid">
+        <div class="product-card">
+          <div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/71GY26iqg+L._AC_SL1500_.jpg" alt="Dove" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div>
+          <div class="product-info"><p class="product-brand">Dove</p><p class="product-name">Body Scrub</p><div class="product-review">"I had a bad tan — paired this with the Vaseline lotion and it cleared in weeks. Use them together."</div><div class="product-footer"><span class="product-price">$10.86</span><a href="https://amzn.to/4tNvGdP" target="_blank" class="shop-btn" rel="noopener">Shop →</a></div></div>
+        </div>
+        <div class="product-card">
+          <div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51foLQC5-7L._AC_SL1000_.jpg" alt="Vaseline" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div>
+          <div class="product-info"><p class="product-brand">Vaseline</p><p class="product-name">Gluta-Hya Body Lotion</p><div class="product-review">"Use after the Dove scrub. My skin became noticeably more even and dewy — didn't expect this from a $20 lotion."</div><div class="product-footer"><span class="product-price">$19.99</span><a href="https://amzn.to/48ySGVh" target="_blank" class="shop-btn" rel="noopener">Shop →</a></div></div>
+        </div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/6114+JwAd4L._AC_SL1200_.jpg" alt="MEDIHEAL" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">MEDIHEAL</p><p class="product-name">Collagen Toner Pads</p><p class="product-desc">100 pads with retinol and peptides. Korean skincare magic.</p><div class="product-footer"><span class="product-price">$23.99</span><a href="https://amzn.to/4n1Owv9" target="_blank" class="shop-btn" rel="noopener">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51ANDu4OdpL._AC_SL1080_.jpg" alt="Dr.Althea" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">Dr.Althea</p><p class="product-name">345 Relief Cream</p><p class="product-desc">Suitable for sensitive skin.</p><div class="product-footer"><span class="product-price">$27.98</span><a href="https://amzn.to/4tQUq4O" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61sSYnrc1zL._AC_SL1500_.jpg" alt="ANUA" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">ANUA</p><p class="product-name">Azelaic Acid 10 Hyaluron</p><p class="product-desc">Redness soothing serum.</p><div class="product-footer"><span class="product-price">$30.99</span><a href="https://amzn.to/4wG0KxS" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51WI5ogyzNL._SL1240_.jpg" alt="The Ordinary" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">The Ordinary</p><p class="product-name">HA 30% + BHA 2% Peeling Solution</p><p class="product-desc">Smoother, brighter skin.</p><div class="product-footer"><span class="product-price">$13.00</span><a href="https://amzn.to/3REGDzS" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51bC4vVdkOL._SL1240_.jpg" alt="The Ordinary" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">The Ordinary</p><p class="product-name">Glycolic Acid</p><p class="product-desc">Brightening daily toner.</p><div class="product-footer"><span class="product-price">$15.80</span><a href="https://amzn.to/4nzMRx1" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51HeCyjIvWL._AC_SL1000_.jpg" alt="Mixsoon" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">-16% Off</span></div><div class="product-info"><p class="product-brand">Mixsoon</p><p class="product-name">Bean Essence</p><p class="product-desc">Glass skin finish — dewy, plump, glowing.</p><div class="product-footer"><span class="product-price">$45.99</span><a href="https://amzn.to/48G1etv" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51Kpw2r-pIL._AC_SL1000_.jpg" alt="ANUA" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">ANUA</p><p class="product-name">Heartleaf Pore Cleansing Foam</p><p class="product-desc">Clears pores without drying.</p><div class="product-footer"><span class="product-price">$23.64</span><a href="https://amzn.to/490xvvF" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/41USmqpEmgL._AC_SL1000_.jpg" alt="ANUA" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">ANUA</p><p class="product-name">Heartleaf Pore Cleansing Oil</p><p class="product-desc">Deep pore cleanse.</p><div class="product-footer"><span class="product-price">$36.54</span><a href="https://amzn.to/4uF1nG2" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51cLnb6BkZL._AC_SL1500_.jpg" alt="ANUA" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">ANUA</p><p class="product-name">Heartleaf Control Cleansing Oil</p><p class="product-desc">Blackhead removal, daily.</p><div class="product-footer"><span class="product-price">$27.50</span><a href="https://amzn.to/42ya88U" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51utpRckeQL._AC_SL1500_.jpg" alt="Celimax" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">-9% Off</span></div><div class="product-info"><p class="product-brand">Celimax</p><p class="product-name">Vita A Retinal Shot</p><p class="product-desc">Pore minimizer and firmer skin.</p><div class="product-footer"><span class="product-price">$26.49</span><a href="https://amzn.to/4tlspkX" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61UfgKn571L._AC_SL1500_.jpg" alt="SKIN1004" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">SKIN1004</p><p class="product-name">Centella Clay Stick Mask</p><p class="product-desc">Detox and blackhead removal.</p><div class="product-footer"><span class="product-price">$23.15</span><a href="https://amzn.to/3RJexn7" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51UfDYLmE6L._AC_SL1080_.jpg" alt="Purito" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">-10% Off</span></div><div class="product-info"><p class="product-brand">Purito</p><p class="product-name">Bamboo Panthenol Cream</p><p class="product-desc">Restores skin barrier.</p><div class="product-footer"><span class="product-price">$35.99</span><a href="https://amzn.to/48LAUye" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61ezuGEUBDL._AC_SL1500_.jpg" alt="EUTHYMOL" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">EUTHYMOL</p><p class="product-name">Original Toothpaste</p><p class="product-desc">Whitening and cavity prevention.</p><div class="product-footer"><span class="product-price">$28.75</span><a href="https://amzn.to/3R1o20I" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61Qu-FBI0IL._SL1500_.jpg" alt="La Roche Posay" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">La Roche Posay</p><p class="product-name">Cicaplast Hand Cream</p><p class="product-desc">Instant relief for dry hands.</p><div class="product-footer"><span class="product-price">$15.00</span><a href="https://amzn.to/4dye1zD" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/61BitEhf6OL._AC_SL1500_.jpg" alt="SKIN1004" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-sale">-35% Off</span></div><div class="product-info"><p class="product-brand">SKIN1004</p><p class="product-name">Centella Brightening Ampoule</p><p class="product-desc">Erases hyperpigmentation.</p><div class="product-footer"><span class="product-price">$21.49</span><a href="https://amzn.to/4n1Owv9" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+
+    <!-- MAKEUP -->
+    <div class="category-section-panel" id="bp-makeup">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg6"><img src="https://m.media-amazon.com/images/I/61rAzWsvImL._AC_SL1500_.jpg" alt="L'Oreal" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">L'Oreal Paris</p><p class="product-name">Divine Wine Lipstick</p><p class="product-desc">Original Satin — the perfect everyday lip.</p><div class="product-footer"><span class="product-price">$12.99</span><a href="https://amzn.to/4tLXpLP" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/71bTEkg88ML._AC_SL1500_.jpg" alt="Chanel" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Chanel</p><p class="product-name">Les 4 Ombres Eyeshadow</p><p class="product-desc">Long-lasting, high-quality pigments.</p><div class="product-footer"><span class="product-price">$139.03</span><a href="https://amzn.to/4f1sIxu" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg6"><img src="https://i.pinimg.com/1200x/04/17/28/0417285ee44f802c9998e56709973990.jpg" alt="Maybelline" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Maybelline</p><p class="product-name">Instant Age Rewind Eraser</p><p class="product-desc">Concealer and contour in one.</p><div class="product-footer"><span class="product-price">$13.48</span><a href="https://amzn.to/42iNcdL" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg4"><img src="https://i.pinimg.com/1200x/5b/d9/63/5bd9637a66e1ba9b1495b7dad0118339.jpg" alt="Maybelline mascara" style="width:100%;height:100%;object-fit:cover;"></div><div class="product-info"><p class="product-brand">Maybelline</p><p class="product-name">Sky High Mascara</p><p class="product-desc">Volumizing and lengthening.</p><div class="product-footer"><span class="product-price">$12.95</span><a href="https://amzn.to/49qrHeM" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+
+    <!-- HAIR -->
+    <div class="category-section-panel" id="bp-haircare">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/61rm+qr8mLL._AC_SL1000_.jpg" alt="Fino" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Fino Premium</p><p class="product-name">Penetration Hair Mask</p><p class="product-desc">UV protection and cell renewal.</p><div class="product-footer"><span class="product-price">$21.95</span><a href="https://amzn.to/49E49Dk" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/71kv7ZWyY7L._AC_SL1500_.jpg" alt="Kitsch" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kitsch</p><p class="product-name">Rustic Vanilla Hair Mist</p><p class="product-desc">Freshen hair and body.</p><div class="product-footer"><span class="product-price">$28.99</span><a href="https://amzn.to/497HyyX" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/71KvkqGdkuL._AC_SL1500_.jpg" alt="Kitsch" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kitsch</p><p class="product-name">Warm Sugar Hair Spray</p><p class="product-desc">Patented odor-eliminating technology.</p><div class="product-footer"><span class="product-price">$28.99</span><a href="https://amzn.to/4dFYePt" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://i.pinimg.com/1200x/4a/ba/45/4aba45dcb08deec6fc5e6678f0e1aa2b.jpg" alt="Kerastase" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kerastase</p><p class="product-name">Elixir Ultime Hair Oil</p><p class="product-desc">Smooth frizz, add shine.</p><div class="product-footer"><span class="product-price">$46.00</span><a href="https://amzn.to/4dmrvjg" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/61OLMvoFOHL._SL1500_.jpg" alt="Olaplex" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Olaplex No. 5</p><p class="product-name">Bond Maintenance Conditioner</p><p class="product-desc">Repairs all hair types.</p><div class="product-footer"><span class="product-price">$49.00</span><a href="https://amzn.to/49glVMR" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/61EsvOWTNoL._AC_SL1500_.jpg" alt="Kerastase" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kerastase</p><p class="product-name">Shampoo for Oily Scalp</p><p class="product-desc">Balancing, silicone free.</p><div class="product-footer"><span class="product-price">$62.00</span><a href="https://amzn.to/3RpLjK0" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/61AvkHh74xL._SL1500_.jpg" alt="Kerastase" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kerastase</p><p class="product-name">Gloss Absolu Spray</p><p class="product-desc">Anti-frizz and illuminating.</p><div class="product-footer"><span class="product-price">$67.00</span><a href="https://amzn.to/3RRbKs6" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg3"><img src="https://i.pinimg.com/736x/47/d6/86/47d68673baf27222c6c0de09de37e7bf.jpg" alt="Kerastase" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-new">New</span></div><div class="product-info"><p class="product-brand">Kerastase</p><p class="product-name">8H Magic Night Serum</p><p class="product-desc">Nourishing overnight shine.</p><div class="product-footer"><span class="product-price">$42.00</span><a href="https://amzn.to/4dyUfnP" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+
+    <!-- NAILS -->
+    <div class="category-section-panel" id="bp-nails">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg6"><img src="https://m.media-amazon.com/images/I/811riMu1xHL._AC_SL1500_.jpg" alt="Beetles" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-sale">On Sale</span></div><div class="product-info"><p class="product-brand">Beetles Gel</p><p class="product-name">At-Home Gel Nail Kit</p><p class="product-desc">Salon nails at home, 2+ weeks.</p><div class="product-footer"><span class="product-price">$53.09</span><a href="https://amzn.to/4wGvGhF" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/71fRp7vo9IL._AC_SL1500_.jpg" alt="Sally Hansen" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-sale">On Sale</span></div><div class="product-info"><p class="product-brand">Sally Hansen</p><p class="product-name">Maximum Growth Treatment</p><p class="product-desc">Grow and strengthen nails.</p><div class="product-footer"><span class="product-price">$9.97</span><a href="https://amzn.to/4np5gg2" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+
+    <!-- FRAGRANCE -->
+    <div class="category-section-panel" id="bp-fragrance">
+      <div class="beauty-grid">
+        <div class="product-card"><div class="product-img p-bg1"><img src="https://m.media-amazon.com/images/I/51TQTRovEBL._AC_SL1000_.jpg" alt="Asdaaf" style="width:100%;height:100%;object-fit:cover;"><span class="card-badge badge-pick">Top Pick</span></div><div class="product-info"><p class="product-brand">Asdaaf</p><p class="product-name">Ameerat Al Arab EDP</p><p class="product-desc">Compliments guaranteed every time.</p><div class="product-footer"><span class="product-price">$31.99</span><a href="https://amzn.to/4dCFLDl" class="shop-btn">Shop →</a></div></div></div>
+        <div class="product-card"><div class="product-img p-bg2"><img src="https://m.media-amazon.com/images/I/41UyyF-4GSL._AC_SL1200_.jpg" alt="Byredo" style="width:100%;height:100%;object-fit:cover;"></div><div class="product-info"><p class="product-brand">Byredo</p><p class="product-name">La Tulipe</p><p class="product-desc">Tulip, freesia and rhubarb — a dream.</p><div class="product-footer"><span class="product-price">$332.33</span><a href="https://amzn.to/4nS0sQA" class="shop-btn">Shop →</a></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-img-wrap">
+      <img src="https://msleonuh.github.io/links/msleonuh.jpeg" alt="MsLeonuh">
+      <div class="about-img-frame"></div>
+    </div>
+    <div>
+      <div class="about-label">나에 대해 — About MsLeonuh</div>
+      <div class="about-korean">왜 이 사이트를 만들었나요?</div>
+      <h2 class="about-title">Why I built <em>this.</em></h2>
+      <div class="about-body">
+        <p>I am not a brand. I am a person who tried a lot of products, figured out what actually works, and decided to share it. <strong>Every single thing on this site I have used myself.</strong></p>
+        <p>The Wonyoungism aesthetic (원영주의) is what inspires how I approach beauty — <strong>intentional, clean, soft, confident.</strong> Not about being perfect. About caring for yourself like you matter. Because you do.</p>
+        <p>I started this because I got tired of affiliate sites recommending products nobody has actually touched. This one is different. If it is here, I have used it, and it worked for me.</p>
+      </div>
+      <a href="https://ca.pinterest.com/MsLeonuh/" target="_blank" class="btn-rose" style="margin-top:28px;display:inline-block;">Follow on Pinterest →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust-section">
+  <div class="trust-inner">
+    <div class="trust-grid">
+      <div class="trust-card"><div class="trust-icon">✦</div><div class="trust-title">Personally Tested</div><div class="trust-ko">직접 테스트</div><p class="trust-body">Every product has been used by MsLeonuh. No paid placements, no fakes.</p></div>
+      <div class="trust-card"><div class="trust-icon">🌸</div><div class="trust-title">Wonyoungism Approved</div><div class="trust-ko">원영주의 승인</div><p class="trust-body">Curated around the glass skin, soft glow aesthetic you actually want.</p></div>
+      <div class="trust-card"><div class="trust-icon">💌</div><div class="trust-title">Honest Reviews</div><div class="trust-ko">솔직한 후기</div><p class="trust-body">Real experiences, real results. No product gets featured unless it delivered.</p></div>
+      <div class="trust-card"><div class="trust-icon">🔗</div><div class="trust-title">Affiliate Links</div><div class="trust-ko">제휴 링크</div><p class="trust-body">Some links earn a small commission — at no extra cost to you. Thank you for supporting.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="nl-inner">
+    <div class="nl-ko">뉴스레터 구독하기</div>
+    <h2 class="nl-title">New picks, <em>weekly.</em></h2>
+    <p class="nl-body">Beauty drops, honest reviews and Wonyoungism inspo straight to your inbox. No spam — just glow.</p>
+    <form class="nl-form" action="YOUR_MAILCHIMP_URL" method="post" target="_blank">
+      <input type="email" name="EMAIL" placeholder="Your email address" class="nl-input" required>
+      <button type="submit" class="nl-btn">구독 Join ✦</button>
+    </form>
+    <p class="nl-note">언제든지 구독 취소 가능 · Unsubscribe anytime</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">Art Is You</span>
+        <span class="footer-logo-ko">아트 이즈 유 · by MsLeonuh · 원영주의 뷰티</span>
+        <p>Real products, personally tested. Wonyoungism beauty picks — skincare, makeup, hair and fragrance. Some links are affiliate links.</p>
+      </div>
+      <div class="footer-col">
+        <h5>뷰티 · Beauty</h5>
+        <a href="#beauty" onclick="switchBeauty('skincare',null);return false;">스킨케어 · Skincare</a>
+        <a href="#beauty" onclick="switchBeauty('makeup',null);return false;">메이크업 · Makeup</a>
+        <a href="#beauty" onclick="switchBeauty('haircare',null);return false;">헤어 · Hair Care</a>
+        <a href="#beauty" onclick="switchBeauty('nails',null);return false;">네일 · Nails</a>
+        <a href="#beauty" onclick="switchBeauty('fragrance',null);return false;">향수 · Fragrance</a>
+      </div>
+      <div class="footer-col">
+        <h5>연결 · Connect</h5>
+        <a href="https://ca.pinterest.com/MsLeonuh/" target="_blank">Pinterest</a>
+        <a href="mailto:MsLeonuh@gmail.com">MsLeonuh@gmail.com</a>
+        <a href="#" onclick="openModal();return false;">뉴스레터 · Newsletter</a>
+      </div>
+      <div class="footer-col">
+        <h5>더보기 · More</h5>
+        <a href="#wonyoung">원영주의 · Wonyoungism</a>
+        <a href="#about">나에 대해 · About</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Art Is You by MsLeonuh · 아트 이즈 유 · All rights reserved</p>
+      <p>Affiliate disclosure: some links earn a small commission at no extra cost to you.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-icon">🌸</div>
+    <div class="modal-ko">뉴스레터 구독하기</div>
+    <h3>Join the Club</h3>
+    <p>New beauty picks, honest reviews and Wonyoungism inspo every week. 진짜 뷰티 픽스.</p>
+    <form class="modal-form" action="YOUR_MAILCHIMP_URL" method="post" target="_blank">
+      <input type="text" name="FNAME" placeholder="First name" class="modal-input">
+      <input type="email" name="EMAIL" placeholder="Email address" class="modal-input" required>
+      <button type="submit" class="modal-submit">구독하기 · I'm In ✦</button>
+    </form>
+    <p class="modal-note">언제든지 구독 취소 가능 · No spam, unsubscribe anytime.</p>
+  </div>
+</div>
+
+<script>
+  function switchBeauty(cat, btn) {
+    document.querySelectorAll('.category-section-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('bp-' + cat).classList.add('active');
+    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    if (btn) {
+      btn.classList.add('active');
+    } else {
+      document.querySelectorAll('.cat-tab').forEach(b => {
+        if (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'" + cat + "'")) b.classList.add('active');
+      });
+    }
+  }
+  function goToBeauty(cat) {
+    switchBeauty(cat, null);
+    document.getElementById('beauty').scrollIntoView({ behavior: 'smooth' });
+  }
+  function openModal() { document.getElementById('modalOverlay').classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeModal() { document.getElementById('modalOverlay').classList.remove('open'); document.body.style.overflow = ''; }
+  function closeModalOutside(e) { if (e.target === document.getElementById('modalOverlay')) closeModal(); }
+</script>
+</body>
+</html>
